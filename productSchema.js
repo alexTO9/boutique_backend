@@ -1,5 +1,3 @@
-// product schema v1.0. Newer Edit.
-
 const mongoose = require("mongoose");
 
 const productSchema = new mongoose.Schema({

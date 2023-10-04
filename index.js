@@ -1,37 +1,11 @@
-// Main logic v1
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const Product = require("./productSchema");
 const cors = require("cors");
 
-// Setup firebase
-// Import the functions you need from the SDKs you need
-// import { initializeApp } from "firebase/app";
-// import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-// const firebaseConfig = {
-//   apiKey: "AIzaSyBfD-b8u1SMbzAhAK-LTn2mmQ71Jmuhacw",
-//   authDomain: "arlekin-bebe.firebaseapp.com",
-//   databaseURL: "https://arlekin-bebe.firebaseio.com",
-//   projectId: "arlekin-bebe",
-//   storageBucket: "arlekin-bebe.appspot.com",
-//   messagingSenderId: "132838440535",
-//   appId: "1:132838440535:web:630302c47a1110a0d92d12",
-//   measurementId: "G-GY7BWBQME5"
-// };
-
-// const analytics = getAnalytics(app);
-
 // Set up express app
 const app = express();
-
-// Initialize Firebase
-// app.initializeApp(firebaseConfig);
 
 // Connect to MongoDB
 mongoose
