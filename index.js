@@ -4,13 +4,17 @@ const bodyParser = require("body-parser");
 const Product = require("./productSchema");
 const cors = require("cors");
 
+// For handling secrets and .env files
+require('dotenv').config();
+const dbConnectionString = process.env.DB_CONNECTION_STRING;
+
 // Set up express app
 const app = express();
 
 // Connect to MongoDB
 mongoose
   .connect(
-    "mongodb+srv://mra9393:ddl31fKqA42sgxMH@cluster0.ea69kat.mongodb.net/arlekindb",
+    dbConnectionString,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
