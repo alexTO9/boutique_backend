@@ -1,4 +1,4 @@
-// product schema v1.0
+// product schema v1.0. Newer Edit.
 
 const mongoose = require("mongoose");
 
