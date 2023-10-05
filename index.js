@@ -111,7 +111,7 @@ app.delete("/products/:sku", (req, res) => {
 
 
 // Start the server
-const port = 3000;
+const port = 443;
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
